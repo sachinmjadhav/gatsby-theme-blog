@@ -1,4 +1,5 @@
-import React from "react";
+import { jsx } from '@emotion/core'
+/** @jsx jsx */
 import { Link } from "gatsby";
 import { P, H3, H4, I, Box, Text, HorizontalRule } from "bricks";
 import PlainLink from "../components/link";
