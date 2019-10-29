@@ -1,4 +1,4 @@
-import { jsx } from '@emotion/core'
+import { jsx } from "@emotion/core";
 /** @jsx jsx */
 import { Link } from "gatsby";
 import { P, H3, H4, I, Box, Text, HorizontalRule } from "bricks";
@@ -10,6 +10,7 @@ import Layout from "../components/layout";
 import Pagination from "../components/pagination";
 import { getCategory, getTags, slugify } from "../utils";
 import CategoryLink from "../components/categorylink";
+import theme from "../theme";
 
 const isLast = (arr, index) => arr.length - 1 === index;
 
@@ -47,13 +48,13 @@ const ReadPostLink = styled(Link)(
     p: "2px",
     display: "inline-block",
     "&:hover": {
-      bg: "black.1",
-      color: "tint"
+      bg: `${theme.colors.black[1]}`,
+      color: `${theme.colors.tint}`
     },
     ":visited": {
       "&:hover": {
-        bg: "black.1",
-        color: "tint"
+        bg: `${theme.colors.black[1]}`,
+        color: `${theme.colors.tint}`
       }
     }
   })
@@ -72,8 +73,8 @@ const HeadingLink = styled(Link)(
     display: "inline-block",
     textDecoration: "none",
     "&:hover": {
-      backgroundColor: "primary",
-      color: "secondary"
+      backgroundColor: `${theme.colors.primary}`,
+      color: `${theme.colors.secondary}`
     }
   })
 );
