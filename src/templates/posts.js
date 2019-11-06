@@ -1,10 +1,10 @@
-import { jsx } from "@emotion/core";
-/** @jsx jsx */
+import React from "react";
 import { Link } from "gatsby";
 import { P, H3, H4, I, Box, Text, HorizontalRule } from "bricks";
 import PlainLink from "../components/link";
 import styled from "@emotion/styled";
 import { space } from "styled-system";
+import { Helmet } from "react-helmet";
 import { css } from "bricks";
 import Layout from "../components/layout";
 import Pagination from "../components/pagination";
@@ -129,7 +129,18 @@ const Posts = ({
 
   return (
     <Layout>
-      <H4 css={css({ color: "black.1" })}>
+      <Helmet>
+        <title>
+          {getHeading({
+            isFirstPage,
+            currentPage,
+            totalPages,
+            type,
+            value
+          })}
+        </title>
+      </Helmet>
+      <H4 css={css({ color: theme.colors.black[1] })}>
         {getHeading({
           isFirstPage,
           currentPage,
