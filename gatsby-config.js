@@ -33,8 +33,6 @@ module.exports = ({ contentPath = "posts", basePath = "/" }) => ({
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`
-    }
+    `gatsby-transformer-remark`
   ]
 });
