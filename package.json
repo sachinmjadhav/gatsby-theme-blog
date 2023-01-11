@@ -32,7 +32,7 @@
     "gatsby-remark-prismjs": "^3.3.21",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-theme-ui": "^0.2.0",
-    "gatsby-transformer-remark": "^2.6.30",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.0",
     "prismjs": "^1.17.1",
     "theme-ui": "^0.2.44"
